@@ -1,17 +1,17 @@
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-# Spotify app bilgilerinizi buraya girin
-CLIENT_ID = '...'
-CLIENT_SECRET = '...'
-REDIRECT_URI = 'http://localhost:8888/callback'  # Bu URL'yi Spotify app ayarlarında belirtin
+# Enter your Spotify app details here
+CLIENT_ID = '...' # you should add your CLIENT_ID
+CLIENT_SECRET = '...' # you should add your CLIENT_SECRET code
+REDIRECT_URI = 'http://localhost:8888/callback'  # Specify this URL in Spotify app settings
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=CLIENT_ID,
                                                client_secret=CLIENT_SECRET,
                                                redirect_uri=REDIRECT_URI,
                                                scope="playlist-modify-public playlist-modify-private"))
 
-# Çalma listenizin ID'sini buraya ekleyin
+# Add your playlist ID here (Link)
 playlist_id = "https://open.spotify.com/playlist/..."
 
 def get_playlist_tracks(playlist_id):
