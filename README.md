@@ -1,8 +1,8 @@
 # Spotify-Playlist-Cleaner
-With Spotify-Playlist-Cleaner, you can remove duplicate songs from your Spotify playlist (if the same song appears more than once). The removed song will be brought back into the playlist only once, so it won't be doubled anymore. __Be careful__ when using the code, as it changes the added date of the songs. If you care about the added dates in your playlist, avoid using it.
+with Spotify-Playlist-Cleaner, you can remove duplicate songs from your Spotify playlist (if the same song appears more than once). The removed song will be brought back into the playlist only once, so it won't be doubled anymore. __Be careful__ when using the code, as it changes the added date of the songs. If you care about the added dates in your playlist, avoid using it.
 It is written with the help of the spotipy module, that helps you to connect your device to your spotify account.
 #
-Spotipy supports all of the features of the Spotify Web API including access to all end points, and support for user authorization. For details on the capabilities you are encouraged to review the Spotify Web API documentation.
+"Spotipy" supports all of the features of the Spotify Web API including access to all end points, and support for user authorization. For details on the capabilities you are encouraged to review the Spotify Web API documentation.
 ## Installation
 * <tab><tab>pip install spotipy
 * <tab><tab>py -m pip install spotipy (for windows users)
